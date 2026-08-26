@@ -1,0 +1,53 @@
+:root {
+  /* Paleta de Colores Principal */
+  --color-primary: #0f2e59; /* Azul profundo / Elegancia y confianza */
+  --color-primary-light: #1e40af; /* Azul corporativo */
+  --color-accent: #0284c7; /* Azul cielo / Salud */
+  --color-accent-light: #e0f2fe; /* Azul hielo suave */
+  --color-turquoise: #0d9488; /* Turquesa suave / Bienestar */
+  --color-turquoise-light: #f0fdfa; /* Fondo turquesa suave */
+
+  /* WhatsApp */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #20bd5a;
+  --color-whatsapp-dark: #128c7e;
+
+  /* Neutros y Superficies */
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+
+  /* Tipografía y Textos */
+  --color-text-main: #0f172a; /* Slate oscuro */
+  --color-text-muted: #475569; /* Slate intermedio */
+  --color-text-light: #94a3b8; /* Gris claro */
+  --color-white: #ffffff;
+
+  /* Sombras Modernas */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md:
+    0 4px 6px -1px rgba(15, 46, 89, 0.08), 0 2px 4px -2px rgba(15, 46, 89, 0.05);
+  --shadow-lg:
+    0 10px 25px -3px rgba(15, 46, 89, 0.1),
+    0 4px 6px -4px rgba(15, 46, 89, 0.05);
+  --shadow-xl:
+    0 20px 35px -5px rgba(15, 46, 89, 0.12),
+    0 8px 10px -6px rgba(15, 46, 89, 0.06);
+
+  /* Radios de Borde */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Transiciones */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Dimensiones del Layout */
+  --max-width: 1200px;
+  --header-height: 74px;
+}
