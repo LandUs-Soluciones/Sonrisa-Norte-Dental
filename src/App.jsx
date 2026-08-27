@@ -41,11 +41,10 @@ export default function App() {
         <Hero />
         <About />
         <Benefits />
-        <Services services={services} />
+        <Process />
         <ServiceCatalog services={services} />
         <Team dentists={dentists} employees={employees} />
         <Stats />
-        <Process />
         <Testimonials />
         <Faq />
         <Location />
