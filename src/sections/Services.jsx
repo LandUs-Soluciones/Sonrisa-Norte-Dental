@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   Activity,
   Clock,
+  BadgeDollarSign,
   ArrowRight,
 } from "lucide-react";
 import { SERVICES_DATA, getWhatsAppUrl } from "../config/clinicData";
@@ -21,7 +22,7 @@ const SERVICE_ICONS = {
   Clock,
 };
 
-export default function Services() {
+export default function Services({ services = SERVICES_DATA }) {
   return (
     <section id="servicios" className="section-padding bg-white">
       <div className="container">
@@ -32,7 +33,7 @@ export default function Services() {
         />
 
         <div className="services-grid">
-          {SERVICES_DATA.map((service) => {
+          {services.map((service) => {
             const IconComp = SERVICE_ICONS[service.icon] || Sparkles;
             const waLink = getWhatsAppUrl(
               `Hola, deseo más información sobre el servicio de ${service.title}.`,
@@ -49,6 +50,10 @@ export default function Services() {
                   </div>
 
                   <h3 className="service-title">{service.title}</h3>
+                  <div className="service-price-row">
+                    <BadgeDollarSign size={17} />
+                    <span>{service.price}</span>
+                  </div>
                   <p className="service-description">{service.description}</p>
                 </div>
 

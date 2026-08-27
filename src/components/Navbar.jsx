@@ -42,8 +42,18 @@ export default function Navbar() {
             </a>
           </li>
           <li>
+            <a href="#catalogo" className="nav-link">
+              Catálogo
+            </a>
+          </li>
+          <li>
             <a href="#nosotros" className="nav-link">
               Nosotros
+            </a>
+          </li>
+          <li>
+            <a href="#equipo" className="nav-link">
+              Equipo
             </a>
           </li>
           <li>
@@ -53,12 +63,17 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#faq" className="nav-link">
-              Preguntas Frecuentes
+              FAQ
             </a>
           </li>
           <li>
             <a href="#contacto" className="nav-link">
               Contacto
+            </a>
+          </li>
+          <li>
+            <a href="#administracion" className="nav-link">
+              Admin
             </a>
           </li>
         </ul>
@@ -86,8 +101,14 @@ export default function Navbar() {
         <a href="#servicios" className="mobile-nav-link" onClick={closeMenu}>
           Servicios
         </a>
+        <a href="#catalogo" className="mobile-nav-link" onClick={closeMenu}>
+          Catálogo y Precios
+        </a>
         <a href="#nosotros" className="mobile-nav-link" onClick={closeMenu}>
           Nosotros
+        </a>
+        <a href="#equipo" className="mobile-nav-link" onClick={closeMenu}>
+          Equipo
         </a>
         <a href="#testimonios" className="mobile-nav-link" onClick={closeMenu}>
           Testimonios
@@ -97,6 +118,13 @@ export default function Navbar() {
         </a>
         <a href="#contacto" className="mobile-nav-link" onClick={closeMenu}>
           Ubicación y Horarios
+        </a>
+        <a
+          href="#administracion"
+          className="mobile-nav-link"
+          onClick={closeMenu}
+        >
+          Administración
         </a>
         <div style={{ marginTop: "12px" }}>
           <WhatsAppButton

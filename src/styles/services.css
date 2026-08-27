@@ -58,6 +58,16 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.service-price-row {
+  color: var(--color-turquoise);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 

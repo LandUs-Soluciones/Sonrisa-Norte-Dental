@@ -53,12 +53,12 @@
 .nav-menu {
   display: none;
   align-items: center;
-  gap: 28px;
+  gap: 18px;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: var(--color-text-muted);
   position: relative;
@@ -140,7 +140,7 @@
   color: var(--color-accent);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1180px) {
   .nav-menu {
     display: flex;
   }

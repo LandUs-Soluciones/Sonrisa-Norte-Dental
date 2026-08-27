@@ -1,0 +1,137 @@
+.team-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.team-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.team-panel-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-primary);
+}
+
+.team-panel-title h3 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.team-grid,
+.team-staff-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.team-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  gap: 18px;
+  min-height: 100%;
+  transition:
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.team-card:hover {
+  border-color: rgba(2, 132, 199, 0.3);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.team-card-staff {
+  background-color: var(--color-surface);
+}
+
+.team-avatar {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-accent-light), #ffffff);
+  border: 1px solid rgba(2, 132, 199, 0.18);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-photo {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  border: 3px solid var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+
+.team-card-content {
+  min-width: 0;
+}
+
+.team-role {
+  color: var(--color-turquoise);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.team-name {
+  color: var(--color-primary);
+  font-size: 1.14rem;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.team-specialty {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.team-experience {
+  color: var(--color-text-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.team-experience svg {
+  color: var(--color-turquoise);
+}
+
+@media (min-width: 760px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1060px) {
+  .team-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-staff-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

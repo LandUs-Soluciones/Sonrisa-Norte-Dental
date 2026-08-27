@@ -1,8 +1,8 @@
 export const CLINIC_CONFIG = {
   name: "Sonrisa Norte Dental",
   tagline: "Tu sonrisa merece el mejor cuidado",
-  phoneDisplay: "+51 987 654 321",
-  whatsappNumber: "51987654321", // Número internacional sin '+' ni espacios
+  phoneDisplay: "+51 907 842 168",
+  whatsappNumber: "51907842168", // Número internacional sin '+' ni espacios
   email: "contacto@sonrisanortedental.com",
   address: "Av. Los Jardines 245, San Isidro, Lima - Perú",
   schedule: {
@@ -27,6 +27,8 @@ export const SERVICES_DATA = [
     id: "limpieza",
     title: "Limpieza Dental Profunda",
     icon: "Sparkles",
+    price: "S/ 120",
+    duration: "45 min",
     description:
       "Profilaxis ultrasónica y pulido dental para eliminar placa bacteriana, manchas y sarro, previniendo caries y gingivitis.",
     tag: "Preventivo",
@@ -35,6 +37,8 @@ export const SERVICES_DATA = [
     id: "blanqueamiento",
     title: "Blanqueamiento Dental",
     icon: "Smile",
+    price: "S/ 450",
+    duration: "60 min",
     description:
       "Aclara varios tonos el color de tus dientes de forma segura y controlada con tecnología LED de última generación.",
     tag: "Estética",
@@ -43,6 +47,8 @@ export const SERVICES_DATA = [
     id: "ortodoncia",
     title: "Ortodoncia y Alineadores",
     icon: "Layers",
+    price: "Desde S/ 280",
+    duration: "Evaluación inicial",
     description:
       "Corrección de la posición dental mediante brackets tradicionales, estéticos o alineadores invisibles personalizados.",
     tag: "Corrección",
@@ -51,6 +57,8 @@ export const SERVICES_DATA = [
     id: "implantes",
     title: "Implantes Dentales",
     icon: "ShieldCheck",
+    price: "Desde S/ 2,500",
+    duration: "Plan personalizado",
     description:
       "Reemplazo duradero y natural de piezas dentales perdidas con titanio biocompatible y coronas de alta resistencia.",
     tag: "Rehabilitación",
@@ -59,6 +67,8 @@ export const SERVICES_DATA = [
     id: "general",
     title: "Odontología Integral",
     icon: "Activity",
+    price: "Desde S/ 90",
+    duration: "30 a 50 min",
     description:
       "Diagnóstico completo, curaciones estéticas con resina, endodoncias y chequeos periódicos para toda la familia.",
     tag: "General",
@@ -67,9 +77,62 @@ export const SERVICES_DATA = [
     id: "emergencias",
     title: "Atención de Urgencias",
     icon: "Clock",
+    price: "Desde S/ 150",
+    duration: "Prioritario",
     description:
       "Atención prioritaria y alivio inmediato ante dolores agudos, fracturas dentales o inflamaciones inesperadas.",
     tag: "Prioritario",
+  },
+];
+
+export const DENTISTS_DATA = [
+  {
+    id: "dra-camila-rojas",
+    name: "Dra. Camila Rojas",
+    role: "Odontóloga rehabilitadora",
+    specialty: "Implantes, coronas y estética dental",
+    experience: "8 años de experiencia",
+    image:
+      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    id: "dr-alonso-vega",
+    name: "Dr. Alonso Vega",
+    role: "Ortodoncista",
+    specialty: "Brackets estéticos y alineadores transparentes",
+    experience: "6 años de experiencia",
+    image:
+      "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    id: "dra-natalia-paredes",
+    name: "Dra. Natalia Paredes",
+    role: "Odontopediatra",
+    specialty: "Atención infantil y prevención familiar",
+    experience: "7 años de experiencia",
+    image:
+      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80",
+  },
+];
+
+export const EMPLOYEES_DATA = [
+  {
+    id: "lucia-morales",
+    name: "Lucía Morales",
+    role: "Coordinadora de citas",
+    specialty: "Agenda, confirmaciones y seguimiento por WhatsApp",
+    experience: "Atención al paciente",
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    id: "mateo-salazar",
+    name: "Mateo Salazar",
+    role: "Asistente dental",
+    specialty: "Apoyo clínico y preparación de gabinete",
+    experience: "Bioseguridad y esterilización",
+    image:
+      "https://images.unsplash.com/photo-1637059824899-a441006a6875?auto=format&fit=crop&w=600&q=80",
   },
 ];
 
