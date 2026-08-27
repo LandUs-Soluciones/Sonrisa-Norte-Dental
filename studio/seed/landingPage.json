@@ -1,0 +1,54 @@
+{
+  "_id": "landingPage",
+  "_type": "landingPage",
+  "siteName": "Sonrisa Norte Dental",
+  "hero": {
+    "eyebrow": "Odontología Preventiva y Estética en Lima",
+    "heading": "Tu sonrisa merece el",
+    "highlight": "mejor cuidado",
+    "description": "Atención dental profesional, cercana y pensada para toda la familia. Diagnósticos precisos, tecnología moderna y un trato humano.",
+    "primaryCtaLabel": "Agenda tu cita",
+    "primaryCtaMessage": "Hola, quisiera agendar una cita de evaluación en Sonrisa Norte Dental.",
+    "secondaryCtaLabel": "Conoce nuestros servicios"
+  },
+  "benefits": [
+    {"_key":"benefit1","title":"Atención personalizada","description":"Tratamientos a tu medida con explicaciones claras, sin prisas y con trato cálido.","icon":"HeartHandshake"},
+    {"_key":"benefit2","title":"Profesionales capacitados","description":"Odontólogos con actualización constante en técnicas avanzadas.","icon":"Award"},
+    {"_key":"benefit3","title":"Equipos modernos","description":"Tecnología digital y esterilización estricta para procedimientos cómodos.","icon":"Cpu"},
+    {"_key":"benefit4","title":"Horarios flexibles","description":"Atención de lunes a sábado con facilidad para reprogramar tus citas.","icon":"CalendarCheck"}
+  ],
+  "services": [
+    {"_key":"service1","title":"Limpieza Dental Profunda","description":"Profilaxis ultrasónica y pulido dental para eliminar placa bacteriana, manchas y sarro.","tag":"Preventivo","price":"S/ 120","duration":"45 min","icon":"Sparkles"},
+    {"_key":"service2","title":"Blanqueamiento Dental","description":"Aclara varios tonos del color de tus dientes de forma segura y controlada.","tag":"Estética","price":"S/ 450","duration":"60 min","icon":"Smile"},
+    {"_key":"service3","title":"Ortodoncia y Alineadores","description":"Corrección de la posición dental mediante brackets o alineadores personalizados.","tag":"Corrección","price":"Desde S/ 280","duration":"Evaluación inicial","icon":"Layers"},
+    {"_key":"service4","title":"Implantes Dentales","description":"Reemplazo duradero y natural de piezas dentales perdidas.","tag":"Rehabilitación","price":"Desde S/ 2,500","duration":"Plan personalizado","icon":"ShieldCheck"},
+    {"_key":"service5","title":"Odontología Integral","description":"Diagnóstico completo, curaciones estéticas y chequeos periódicos.","tag":"General","price":"Desde S/ 90","duration":"30 a 50 min","icon":"Activity"},
+    {"_key":"service6","title":"Atención de Urgencias","description":"Atención ante dolor agudo, fracturas dentales o inflamaciones inesperadas.","tag":"Prioritario","price":"Desde S/ 150","duration":"Prioritario","icon":"Clock"}
+  ],
+  "about": {
+    "badge":"Sobre Nosotros",
+    "title":"Pasión por la odontología, dedicación a tu bienestar",
+    "paragraphs":["En Sonrisa Norte Dental entendemos que visitar al dentista debe ser una experiencia tranquila, transparente y libre de estrés.","Somos un equipo multidisciplinario enfocado en la odontología preventiva y reconstructiva, combinando tecnología moderna con un trato cálido y personalizado."],
+    "features":["Protocolos rigurosos de bioseguridad y esterilización.","Instalaciones modernas para tu confort.","Planes de tratamiento claros y sin costos ocultos."],
+    "ctaLabel":"Conoce a nuestro equipo",
+    "ctaMessage":"Hola, quisiera conocer más sobre el equipo de Sonrisa Norte Dental."
+  },
+  "team": [
+    {"_key":"team1","name":"Dra. Camila Rojas","role":"Odontóloga rehabilitadora","specialty":"Implantes, coronas y estética dental","experience":"8 años de experiencia","category":"dentist"},
+    {"_key":"team2","name":"Dr. Alonso Vega","role":"Ortodoncista","specialty":"Brackets estéticos y alineadores transparentes","experience":"6 años de experiencia","category":"dentist"},
+    {"_key":"team3","name":"Dra. Natalia Paredes","role":"Odontopediatra","specialty":"Atención infantil y prevención familiar","experience":"7 años de experiencia","category":"dentist"},
+    {"_key":"team4","name":"Lucía Morales","role":"Coordinadora de citas","specialty":"Agenda, confirmaciones y seguimiento por WhatsApp","experience":"Atención al paciente","category":"staff"},
+    {"_key":"team5","name":"Mateo Salazar","role":"Asistente dental","specialty":"Apoyo clínico y preparación de gabinete","experience":"Bioseguridad y esterilización","category":"staff"}
+  ],
+  "contact": {
+    "address":"Av. Los Jardines 245, San Isidro, Lima - Perú",
+    "phoneDisplay":"+51 907 842 168",
+    "whatsappNumber":"51907842168",
+    "email":"contacto@sonrisanortedental.com",
+    "weekdays":"Lunes a Viernes: 9:00 a. m. – 7:00 p. m.",
+    "saturday":"Sábados: 9:00 a. m. – 2:00 p. m.",
+    "sunday":"Domingos: Cerrado (Emergencias previa coordinación)",
+    "mapEmbedUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.442807380967!2d-77.03688562414774!3d-12.081829988157778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866d5b03513%3A0x6337851240186981!2sSan%20Isidro%2C%20Lima!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe"
+  },
+  "finalCta": {"title":"Da el primer paso hacia una sonrisa más saludable","description":"Agenda tu evaluación y recibe atención personalizada en un ambiente cómodo, moderno y cercano.","label":"Agendar por WhatsApp","message":"Hola, deseo agendar mi cita en Sonrisa Norte Dental."}
+}

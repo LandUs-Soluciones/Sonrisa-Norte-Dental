@@ -33,21 +33,21 @@ function TeamCard({ member, variant = "dentist" }) {
   );
 }
 
-export default function Team({ dentists, employees }) {
+export default function Team({content, dentists, employees}) {
   return (
     <section id="equipo" className="section-padding bg-white">
       <div className="container">
         <SectionHeader
-          badge="Equipo clínico"
-          title="Especialistas y atención coordinada"
-          subtitle="Dentistas, asistentes y personal administrativo preparados para acompañarte antes, durante y después de tu tratamiento."
+          badge={content.badge}
+          title={content.title}
+          subtitle={content.subtitle}
         />
 
         <div className="team-layout">
           <div className="team-panel">
             <div className="team-panel-title">
               <UserRound size={20} />
-              <h3>Dentistas</h3>
+              <h3>{content.clinicalLabel}</h3>
             </div>
             <div className="team-grid">
               {dentists.map((member) => (
@@ -59,7 +59,7 @@ export default function Team({ dentists, employees }) {
           <div className="team-panel team-panel-compact">
             <div className="team-panel-title">
               <ClipboardCheck size={20} />
-              <h3>Personal de apoyo</h3>
+              <h3>{content.supportLabel}</h3>
             </div>
             <div className="team-staff-list">
               {employees.map((member) => (

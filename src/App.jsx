@@ -1,69 +1,39 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-import Benefits from "./sections/Benefits";
-import ServiceCatalog from "./sections/ServiceCatalog";
-import About from "./sections/About";
-import Stats from "./sections/Stats";
-import Process from "./sections/Process";
-import Testimonials from "./sections/Testimonials";
-import Faq from "./sections/Faq";
-import Location from "./sections/Location";
-import FinalCta from "./sections/FinalCta";
-import Team from "./sections/Team";
-import AdminPanel from "./sections/AdminPanel";
-import Footer from "./components/Footer";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import useClinicContent from "./hooks/useClinicContent";
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
+import Benefits from './sections/Benefits'
+import ServiceCatalog from './sections/ServiceCatalog'
+import About from './sections/About'
+import Process from './sections/Process'
+import Location from './sections/Location'
+import FinalCta from './sections/FinalCta'
+import Team from './sections/Team'
+import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
+import useLandingContent from './hooks/useLandingContent'
 
-import "./styles/global.css";
+import './styles/global.css'
 
 export default function App() {
-  const clinicContent = useClinicContent();
-  const {
-    services,
-    dentists,
-    employees,
-    addItem,
-    updateItem,
-    removeItem,
-    resetContent,
-  } = clinicContent;
+  const content = useLandingContent()
+  const dentists = content.team.filter((member) => member.category !== 'staff')
+  const employees = content.team.filter((member) => member.category === 'staff')
 
   return (
     <div className="app-layout">
-      {/* Barra de Navegación Fija */}
-      <Navbar />
-
-      {/* Contenido Principal */}
+      <Navbar siteName={content.siteName} whatsappNumber={content.contact.whatsappNumber} />
       <main>
-        <Hero />
-        <Benefits />
-        <Process />
-        <ServiceCatalog services={services} />
-        <About />
-        <Team dentists={dentists} employees={employees} />
-        <Stats />
-        <Testimonials />
-        <Faq />
-        <Location />
-        <FinalCta />
-        <AdminPanel
-          services={services}
-          dentists={dentists}
-          employees={employees}
-          addItem={addItem}
-          updateItem={updateItem}
-          removeItem={removeItem}
-          resetContent={resetContent}
-        />
+        <Hero content={content.hero} whatsappNumber={content.contact.whatsappNumber} />
+        <Benefits content={content.sections.benefits} benefits={content.benefits} />
+        <Process content={content.sections.booking} whatsappNumber={content.contact.whatsappNumber} />
+        <ServiceCatalog content={content.sections.services} services={content.services} whatsappNumber={content.contact.whatsappNumber} />
+        <About content={content.about} whatsappNumber={content.contact.whatsappNumber} />
+        <Team content={content.sections.team} dentists={dentists} employees={employees} />
+        <Location content={content.contact} section={content.sections.contact} />
+        <FinalCta content={content.finalCta} whatsappNumber={content.contact.whatsappNumber} />
       </main>
-
-      {/* Pie de Página */}
-      <Footer />
-
-      {/* Botón Flotante Permanente */}
-      <FloatingWhatsApp />
+      <Footer siteName={content.siteName} contact={content.contact} content={content.sections.footer} />
+      <FloatingWhatsApp whatsappNumber={content.contact.whatsappNumber} tooltip={content.sections.footer.floatingTooltip} />
     </div>
-  );
+  )
 }
