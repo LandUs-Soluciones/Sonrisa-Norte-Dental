@@ -39,10 +39,10 @@ export default function App() {
       {/* Contenido Principal */}
       <main>
         <Hero />
+        <About />
         <Benefits />
         <Services services={services} />
         <ServiceCatalog services={services} />
-        <About />
         <Team dentists={dentists} employees={employees} />
         <Stats />
         <Process />
