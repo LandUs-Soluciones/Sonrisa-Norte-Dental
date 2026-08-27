@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Benefits from "./sections/Benefits";
-import Services from "./sections/Services";
 import ServiceCatalog from "./sections/ServiceCatalog";
 import About from "./sections/About";
 import Stats from "./sections/Stats";
@@ -39,10 +38,10 @@ export default function App() {
       {/* Contenido Principal */}
       <main>
         <Hero />
-        <About />
         <Benefits />
         <Process />
         <ServiceCatalog services={services} />
+        <About />
         <Team dentists={dentists} employees={employees} />
         <Stats />
         <Testimonials />
